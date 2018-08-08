@@ -2,47 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bb91b0b-a7c4-4cf2-81cc-7fc4fca2ce01" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Controller/ControllerSnake$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Controller/ControllerSnake.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Controller/StatusGame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/Coord.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/Frog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake$Animal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake$Direction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/Snake.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Viewer/ViewerSnake$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Viewer/ViewerSnake$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Viewer/ViewerSnake.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SnakeApplication/SnakeApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Controller/ControllerSnake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Controller/StatusGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Coord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Frog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Viewer/ViewerSnake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SnakeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Roman.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Roman.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SnakeApplication.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Code/Frog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Code/Game$Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Code/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Code/StatusGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Code/_Snake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Code/Frog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Code/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Code/StatusGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Code/_Snake.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Snake.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Controller/ControllerSnake$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Controller/ControllerSnake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Controller/StatusGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/Coord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/Frog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake$Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake$Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/Snake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Viewer/ViewerSnake$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Viewer/ViewerSnake$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Viewer/ViewerSnake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SnakeApplication/SnakeApplication.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,23 +34,17 @@
       <file leaf-file-name="SnakeApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SnakeApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="125">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewerSnake.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewerSnake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Viewer/ViewerSnake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding>
-                <element signature="e#996#1180#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-                <element signature="e#1375#1847#0" expanded="true" />
-                <element signature="e#1846#1847#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -84,7 +52,7 @@
       <file leaf-file-name="ControllerSnake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Controller/ControllerSnake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
+            <state relative-caret-position="1925">
               <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#1460#1461#0" expanded="true" />
@@ -95,12 +63,6 @@
                 <element signature="e#1664#1665#0" expanded="true" />
                 <element signature="e#1699#1700#0" expanded="true" />
                 <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#2346#2347#0" expanded="true" />
-                <element signature="e#2393#2394#0" expanded="true" />
-                <element signature="e#2441#2442#0" expanded="true" />
-                <element signature="e#2470#2471#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
-                <element signature="e#2552#2553#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,16 +71,8 @@
       <file leaf-file-name="ModelSnake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-              <folding>
-                <element signature="e#3092#3093#0" expanded="true" />
-                <element signature="e#3120#3121#0" expanded="true" />
-                <element signature="e#3918#3919#0" expanded="true" />
-                <element signature="e#3949#3950#0" expanded="true" />
-                <element signature="e#3984#3985#0" expanded="true" />
-                <element signature="e#4011#4012#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -126,17 +80,17 @@
       <file leaf-file-name="Coord.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Coord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="250">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="221">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -205,39 +159,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Frog.java" />
         <option value="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Coord.java" />
-        <option value="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java" />
         <option value="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Controller/ControllerSnake.java" />
         <option value="$PROJECT_DIR$/src/SnakeApplication.java" />
+        <option value="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java" />
+        <option value="$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Snake.java" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="7" />
-    <option name="y" value="12" />
-    <option name="width" value="1003" />
-    <option name="height" value="1008" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>InfiniteLoopStatement</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -245,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -285,11 +211,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sweeper/src/sweeper/Ranges.java" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -385,15 +308,6 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
@@ -410,13 +324,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22374429" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1734694" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17615467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42687276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42600897" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
@@ -424,60 +337,96 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
+      <window_info id="Designer" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.16714698" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22478387" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949087" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" visible="true" weight="0.16714698" />
       <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39961576" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.22478387" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021322" side_tool="true" weight="0.16714698" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32949087" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
+      <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="ver 1.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver 1.0.0" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Controller/ControllerSnake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1925">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Coord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Frog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Viewer/ViewerSnake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#996#1180#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1375#1847#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,14 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#3092#3093#0" expanded="true" />
-            <element signature="e#3120#3121#0" expanded="true" />
-            <element signature="e#3918#3919#0" expanded="true" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-            <element signature="e#4011#4012#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,12 +474,6 @@
             <element signature="e#1664#1665#0" expanded="true" />
             <element signature="e#1699#1700#0" expanded="true" />
             <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -578,12 +513,6 @@
             <element signature="e#1664#1665#0" expanded="true" />
             <element signature="e#1699#1700#0" expanded="true" />
             <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -616,20 +545,11 @@
             <element signature="e#1664#1665#0" expanded="true" />
             <element signature="e#1699#1700#0" expanded="true" />
             <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Code/Canvas.java" />
-    <entry file="file://$PROJECT_DIR$/../Sweeper/src/sweeper/GameState.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/awt/event/ActionListener.java" />
     <entry file="file://$PROJECT_DIR$/../Sweeper/src/JavaSweeper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -645,9 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sweeper/src/sweeper/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Sweeper/src/sweeper/Bomb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
@@ -662,20 +579,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sweeper/src/sweeper/Box.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Snake.java" />
     <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Map.java" />
-    <entry file="file://$PROJECT_DIR$/SnakeApplication.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/.name">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -716,13 +621,6 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/awt/Component.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/javax/swing/JFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Frog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Sweeper/src/sweeper/Coord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -737,38 +635,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Coord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-          <folding>
-            <element signature="e#3092#3093#0" expanded="true" />
-            <element signature="e#3120#3121#0" expanded="true" />
-            <element signature="e#3918#3919#0" expanded="true" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-            <element signature="e#4011#4012#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Controller/ControllerSnake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
+        <state relative-caret-position="1925">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#1460#1461#0" expanded="true" />
@@ -779,33 +648,58 @@
             <element signature="e#1664#1665#0" expanded="true" />
             <element signature="e#1699#1700#0" expanded="true" />
             <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2441#2442#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SnakeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Viewer/ViewerSnake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="100">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Coord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Frog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SnakeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/ModelSnake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/SnakeApplication/Sinitcyn/Roman/Snake/Model/ModelSnake.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#996#1180#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1375#1847#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#0#4852#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sinitcyn/Roman/Snake/Model/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
