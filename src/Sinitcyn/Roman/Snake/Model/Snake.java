@@ -1,47 +1,85 @@
 package Sinitcyn.Roman.Snake.Model;
 
-import java.awt.*;
-import java.util.Vector;
+import java.util.ArrayList;
+
 /*
         Класс змеи
  */
-class Snake {
-    //private Coord coord;
-    private final int k[]={ModelSnake.getSIZE()/6,ModelSnake.getSIZE()/4};  //коэффициенты смещения координат для тела и хвоста
-    private Vector<Coord> sn;                                               //массив хранения всех координат змеи
+class Snake extends Animal {
+    private ArrayList<Coord> sn;         //массив хранения всех координат змеи
+    private int time;
+    private int length;
 
-    Snake(int length){
-        sn=new Vector<>();
+    Snake(int length, int time){
+        this.length=length;
+        sn=new ArrayList<>();
+
         for (int i = length;i>0; i--) {
             sn.add(new Coord(i-1, 0));
         }
+        this.time=time;
     }
 
-    void Move(Coord coord){             //метод перемещения
-        for(int i=sn.size()-1;i>0;i--) {
-            sn.setElementAt(sn.get(i-1), i);
+//метод перемещения
+    private void Move(){
+        Coord oldCoord=new Coord(sn.get(sn.size()-1).x,sn.get(sn.size()-1).y);
+        Coord coord =new Coord(sn.get(0).x,sn.get(0).y);
+        switch (ModelSnake.getDirection()){
+            case UP: coord.y=(coord.y-1)%ModelSnake.getSizeMap().y;if (coord.y<0) coord.y+=ModelSnake.getSizeMap().y;  break;
+            case RIGTH: coord.x=(coord.x+1)%ModelSnake.getSizeMap().x;   break;
+            case DOWN: coord.y=(coord.y+1)%ModelSnake.getSizeMap().y;    break;
+            case LEFT: coord.x=(coord.x-1)%ModelSnake.getSizeMap().x;if (coord.x<0) coord.x+=ModelSnake.getSizeMap().x;   break;
         }
-        sn.setElementAt(coord,0 );
+        for(int i = length-1; i>0; i--) {
+            sn.set(i,sn.get(i-1));
+        }
+        sn.set(0, coord);
+        field.MoveSnake(sn,oldCoord);
     }
 
-    void Shorten (){                    //метод укорочения
+//метод укорочения
+    void Shorten (){
+        sn.remove(sn.size()-1);
+    }
+
+//метод удлинения
+    void Lengthen(){
 
     }
 
-    void Lengthen(){                    //метод удлинения
-
+    ArrayList<Coord> getSnake(){       //вовращает координаты змеи
+        return sn;
     }
 
-    void paint(Graphics g) {
-        g.setColor(Color.YELLOW);
-        g.fillArc(sn.firstElement().x*ModelSnake.getSIZE(),sn.firstElement().y*ModelSnake.getSIZE(),ModelSnake.getSIZE(),ModelSnake.getSIZE(),0,360);
-        for (int i=0;i<sn.size()-1;i++)
-            g.fillArc(sn.get(i).x*ModelSnake.getSIZE()+k[0] , sn.get(i).y*ModelSnake.getSIZE()+k[0] , ModelSnake.getSIZE()*2/3 , ModelSnake.getSIZE()*2/3, 0, 360);
-        g.fillArc(sn.lastElement().x*ModelSnake.getSIZE()+k[1],sn.lastElement().y*ModelSnake.getSIZE()+k[1],ModelSnake.getSIZE()/2,ModelSnake.getSIZE()/2,0,360);
-    }
+    @Override
+    public void run() {
+        super.run();
+        boolean b=true;
 
-    Coord getHeadSnake(){               //вовращает координаты головы
-        return sn.firstElement();
-    }
+        System.out.println("Snake запущен");
+        try {
+            while (b){
+                switch (ModelSnake.getStatus()){
+                    case PLAY:{
+                        Thread.sleep(time);
+                        Move();
+                        break;
+                    }
+                    case LOSS:
+                    case WINNER:
+                    case STOP:{
+                        b=false;
+                        break;
+                    }
+                    default:break;
+                }
+            }
+        }
+        catch (InterruptedException e) {
+            System.out.println(" Snake прерван");
+            e.printStackTrace();
+        }
+        System.out.println(" Snake завершен");
 
+    }
 }

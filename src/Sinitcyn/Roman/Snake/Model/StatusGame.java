@@ -1,4 +1,4 @@
-package Sinitcyn.Roman.Snake.Controller;
+package Sinitcyn.Roman.Snake.Model;
 /*
         перечисление статусов игры
  */

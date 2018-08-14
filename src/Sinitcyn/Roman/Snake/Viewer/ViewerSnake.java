@@ -1,24 +1,35 @@
 package Sinitcyn.Roman.Snake.Viewer;
 
 import Sinitcyn.Roman.Snake.Controller.ControllerSnake;
+import Sinitcyn.Roman.Snake.Model.FieldAnimal;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Observable;
+import java.util.Observer;
 
 /*
     Класс отвечает за отображение графики и создание интерфейса игры
  */
 
-public class ViewerSnake extends JFrame {
+public class ViewerSnake extends JFrame implements Observer {
 
+    private static final int SIZE=60;                         //размер клетки поля 60х60 кратность 4 и 3
     private static final String FORMAT_SCORE = "Score: %-5d";
     private static JLabel score = new JLabel();
     private static JLabel status = new JLabel();
     private static JButton play, pause, stop;
+    private int cols;
+    private int rows;
+    private static int k[]={SIZE/6,SIZE/4};         //коэффициенты смещения координат к[0] - для тела и лягушек, к[1] - для хвоста
+    private FieldAnimal[][] field;
 
     public ViewerSnake(int cols, int rows)    {
+        this.cols=cols;
+        this.rows=rows;
+
         play = new JButton("Play");
         pause = new JButton("Pause");
         stop = new JButton("Stop");
@@ -36,22 +47,16 @@ public class ViewerSnake extends JFrame {
             @Override
             public void paint(Graphics g) {
                 super.paint(g);
-                ControllerSnake.paintControl(g);
+                paintField(g);
             }
         };
-        canvas.setPreferredSize(new Dimension(cols* ControllerSnake.getSIZE(), rows* ControllerSnake.getSIZE()));
+        canvas.setPreferredSize(new Dimension(cols* SIZE, rows* SIZE));
         canvas.setBackground(Color.DARK_GRAY);
         canvas.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
                 super.mousePressed(e);
-                switch (e.getButton()){
-                    case MouseEvent.BUTTON1:
-                        ControllerSnake.pressLeftButton();break;
-                    case MouseEvent.BUTTON3:
-                        ControllerSnake.pressRigthButton();break;
-                    default:break;
-                }
+                ControllerSnake.mousePressButton(e);
             }
         });
 
@@ -64,7 +69,6 @@ public class ViewerSnake extends JFrame {
         add(status,BorderLayout.SOUTH);
 
         setTitle("Roman's SNAKE");
-        setMinimumSize(new Dimension(ControllerSnake.getSIZE()*5, ControllerSnake.getSIZE()*5));
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocation(200,200);
@@ -79,6 +83,12 @@ public class ViewerSnake extends JFrame {
 
         stop.addActionListener(e->
                 ControllerSnake.Stop());
+
+        field=new FieldAnimal[cols][rows];
+
+        for(int i=0;i<cols;i++)
+            for(int j=0;j<rows;j++)
+                field[i][j]=FieldAnimal.NULL;
     }
 
     public void setScore(int sc) {
@@ -95,6 +105,47 @@ public class ViewerSnake extends JFrame {
        stop.setEnabled(_stop);
     }
 
+    //отрисовка карты
+    private void paintField(Graphics g){
+        for(int j=0;j<rows;j++)
+            for(int i=0;i<cols;i++){
+                g.setColor(Color.WHITE);
+                g.drawRect(i*SIZE, j*SIZE,SIZE,SIZE);
+                switch (field[i][j]){
+                    case SNAKEHEAD:
+                        g.setColor(Color.YELLOW);
+                        g.fillArc(i*SIZE, j*SIZE,SIZE,SIZE,0,360);
+                        break;
+                    case SNAKEBODY:
+                        g.setColor(Color.YELLOW);
+                        g.fillArc(i*SIZE+k[0], j*SIZE+k[0],SIZE*2/3,SIZE*2/3,0,360);
+                        break;
+                    case SNAKETAIL:
+                        g.setColor(Color.YELLOW);
+                        g.fillArc(i*SIZE+k[1], j*SIZE+k[1],SIZE/2,SIZE/2,0,360);
+                        break;
+                    case FROGGREEN:
+                        g.setColor(Color.GREEN);
+                        g.fillArc(i*SIZE+k[0], j*SIZE+k[0],SIZE*2/3,SIZE*2/3,0,360);
+                        break;
+                    case FROGRED:
+                        g.setColor(Color.RED);
+                        g.fillArc(i*SIZE+k[0], j*SIZE+k[0],SIZE*2/3,SIZE*2/3,0,360);
+                        break;
+                    case FROGBLUE:
+                        g.setColor(Color.BLUE);
+                        g.fillArc(i*SIZE+k[0], j*SIZE+k[0],SIZE*2/3,SIZE*2/3,0,360);
+                    default:break;
+                }
+            }
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        field= (FieldAnimal[][]) arg;
+        repaint();
+    }
 }
+
 
 

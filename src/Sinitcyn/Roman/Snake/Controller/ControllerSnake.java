@@ -1,9 +1,10 @@
 package Sinitcyn.Roman.Snake.Controller;
 
 import Sinitcyn.Roman.Snake.Model.ModelSnake;
+import Sinitcyn.Roman.Snake.Model.StatusGame;
 import Sinitcyn.Roman.Snake.Viewer.ViewerSnake;
 
-import java.awt.*;
+import java.awt.event.MouseEvent;
 
 /*
         Класс отвечает за взаимосвязь логики и отображения
@@ -13,98 +14,44 @@ public class ControllerSnake {
 
     private static Sinitcyn.Roman.Snake.Model.ModelSnake model;
     private static ViewerSnake view;
-    private static StatusGame status;
 
-    public ControllerSnake(Sinitcyn.Roman.Snake.Model.ModelSnake modelSnake, ViewerSnake viewerSnake) {
+    public ControllerSnake(ModelSnake modelSnake, ViewerSnake viewerSnake) {
         model=modelSnake;
         view=viewerSnake;
+        model.getGameField().addObserver(view);                     //установка подписчика view на изменения от model
         view.setEnabledButton(true,false,false);
-        view.setScore(model.getScore());
-        status=StatusGame.STOP;
-        Start();
     }
 
     public static void Play(){
         view.setEnabledButton(false,true,true);
         view.setStatus("PLAY");
-        if (status==StatusGame.STOP){
+        if (ModelSnake.getStatus()!=StatusGame.PAUSE) {
+//            ModelSnake.setStatus(StatusGame.PLAY);
             model.startGame();
-            view.repaint();
         }
-        status=StatusGame.PLAY;
-        System.out.println(status);
+        ModelSnake.setStatus(StatusGame.PLAY);
     }
 
     public static void Pause(){
         view.setEnabledButton(true,false,true);
         view.setStatus("PAUSE");
-        status=StatusGame.PAUSE;
-        System.out.println(status);
+        model.pausedGame();
+//        ModelSnake.setStatus(StatusGame.PAUSE);
     }
 
     public static void Stop(){
         view.setEnabledButton(true,false,false);
         view.setStatus("STOPPED");
-        status=StatusGame.STOP;
-        model.clear();
-        view.repaint();
-        System.out.println(status);
+        model.stopGame();
+//        ModelSnake.setStatus(StatusGame.STOP);
 
     }
 
-    public static void pressRigthButton() {
-        model.setDirection(true);
-    }
-
-    public static void pressLeftButton() {
-       model.setDirection(false);
-    }
-
-    public static void paintControl(Graphics g){
-        model.paint(g);
-    }
-
-    protected static void Move(){
-            model.MoveSnake();
-    }
-
-    private static void Start(){
-        while (true){
-            switch (status){
-                case PLAY:{
-                    Move();
-                    view.repaint();
-                    break;
-                }
-                case PAUSE:{
-                    break;
-                }
-                case STOP:{
-                    break;
-                }
-                case WINNER:{
-                    break;
-                }
-                case LOSS:{
-                    break;
-                }
-            }
+    public static void mousePressButton(MouseEvent e)
+    {
+        switch (e.getButton()){
+            case MouseEvent.BUTTON1:model.setDirection(true);break;
+            case MouseEvent.BUTTON3:model.setDirection(false);break;
         }
     }
-
-    public static void setStatus(StatusGame status)
-    {
-        ControllerSnake.status = status;
-    }
-
-    public static StatusGame getStatus()
-    {
-        return status;
-    }
-
-    public static int getSIZE()
-    {
-        return ModelSnake.getSize();
-    }
-
 }
