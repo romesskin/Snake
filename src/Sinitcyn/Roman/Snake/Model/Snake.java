@@ -11,6 +11,7 @@ class Snake extends Animal {
     private int length;
 
     Snake(int length, int time){
+        super();
         this.length=length;
         sn=new ArrayList<>();
 
@@ -34,16 +35,24 @@ class Snake extends Animal {
             sn.set(i,sn.get(i-1));
         }
         sn.set(0, coord);
+        switch (field.testField(coord)){
+            case FROGGREEN:{
+                field.incScore();
+                model.delFrog(coord);
+                Lengthen(coord);
+                break;
+            }
+        }
         field.MoveSnake(sn,oldCoord);
     }
 
 //метод укорочения
-    void Shorten (){
+    private void Shorten (){
         sn.remove(sn.size()-1);
     }
 
 //метод удлинения
-    void Lengthen(){
+    private void Lengthen(Coord coord){
 
     }
 
@@ -53,13 +62,11 @@ class Snake extends Animal {
 
     @Override
     public void run() {
-        super.run();
-        boolean b=true;
 
         System.out.println("Snake запущен");
         try {
-            while (b){
-                switch (ModelSnake.getStatus()){
+            while (!finish){
+               switch (ModelSnake.getStatus()){
                     case PLAY:{
                         Thread.sleep(time);
                         Move();
@@ -67,8 +74,8 @@ class Snake extends Animal {
                     }
                     case LOSS:
                     case WINNER:
-                    case STOP:{
-                        b=false;
+                    case STOP: {
+                        finish=true;
                         break;
                     }
                     default:break;
@@ -76,10 +83,9 @@ class Snake extends Animal {
             }
         }
         catch (InterruptedException e) {
-            System.out.println(" Snake прерван");
+            System.out.println("Snake прерван");
             e.printStackTrace();
         }
-        System.out.println(" Snake завершен");
-
+        System.out.println("Snake завершен");
     }
 }

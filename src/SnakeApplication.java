@@ -9,7 +9,7 @@ public class SnakeApplication {
     private static int rows=8;          //количесвто строк
     private static int frogs=4;         //начальное количество лягушек
     private static int snakeLength=5;   //начальная длина змеи
-    private static int time=700;       //время засыпания змеи
+    private static int time=400;       //время засыпания змеи
 
     public static void main(String[] args) {
         ModelSnake Model=new ModelSnake(cols,rows,snakeLength,frogs,time);

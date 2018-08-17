@@ -91,7 +91,7 @@ public class ViewerSnake extends JFrame implements Observer {
                 field[i][j]=FieldAnimal.NULL;
     }
 
-    public void setScore(int sc) {
+    private void setScore(int sc) {
         score.setText(String.format(FORMAT_SCORE, sc));
     }
 
@@ -142,7 +142,10 @@ public class ViewerSnake extends JFrame implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        field= (FieldAnimal[][]) arg;
+        if(arg instanceof FieldAnimal[][])
+            field= (FieldAnimal[][]) arg;
+        else
+            setScore((int)arg);
         repaint();
     }
 }

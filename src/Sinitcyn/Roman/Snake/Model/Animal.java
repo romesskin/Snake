@@ -1,11 +1,13 @@
 package Sinitcyn.Roman.Snake.Model;
 
-import java.util.ArrayList;
-
 abstract class Animal implements Runnable{
     protected GameField field;
+    protected ModelSnake model;
+    protected Thread t;
+    protected boolean finish;
 
-    @Override
-    public void run() {
+    Animal(){
+        t=new Thread(this);
+        finish=false;
     }
 }

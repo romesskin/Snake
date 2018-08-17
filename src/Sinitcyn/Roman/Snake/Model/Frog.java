@@ -5,10 +5,12 @@ package Sinitcyn.Roman.Snake.Model;
  */
 class Frog extends Animal
 {
+    static private int count=0;
     private Coord coord;
     private FieldAnimal color;
 
     Frog(Coord _coord, FieldAnimal _color){
+        super();
         coord = _coord;
         color=_color;
     }
@@ -17,13 +19,21 @@ class Frog extends Animal
         field.MoveFrog(coord);
     }
 
+    Coord getCoord(){
+        return coord;
+    }
+
+    FieldAnimal getColor(){
+        return color;
+    }
+
     @Override
     public void run() {
-        super.run();
-        boolean b=true;
-        System.out.println("Frog запущен");
+        int c = ++count;
+        System.out.println("Frog "+ c +" запущен");
+
         try {
-            do{
+            while (!finish){
                 switch (ModelSnake.getStatus()){
                     case PLAY:{
                         Thread.sleep(ModelSnake.getTime()*2);
@@ -34,17 +44,18 @@ class Frog extends Animal
                     case WINNER:
                     case STOP:
                     {
-                        b=false;
+                        finish=true;
                         break;
                     }
                     default:break;
                 }
-            }while (b);
+            }
         }
-        catch (Exception e) {
+        catch (InterruptedException e) {
             System.out.println("Frog прерван");
             e.printStackTrace();
         }
-        System.out.println("Frog завершен");
+        System.out.println("Frog "+(c)+" завершен");
+//        count--;
     }
 }

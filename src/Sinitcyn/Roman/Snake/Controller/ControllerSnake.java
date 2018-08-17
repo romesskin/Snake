@@ -25,33 +25,28 @@ public class ControllerSnake {
     public static void Play(){
         view.setEnabledButton(false,true,true);
         view.setStatus("PLAY");
-        if (ModelSnake.getStatus()!=StatusGame.PAUSE) {
-//            ModelSnake.setStatus(StatusGame.PLAY);
+        if (ModelSnake.getStatus()!=StatusGame.PAUSE)
             model.startGame();
-        }
-        ModelSnake.setStatus(StatusGame.PLAY);
+        model.playGame();
     }
 
     public static void Pause(){
         view.setEnabledButton(true,false,true);
         view.setStatus("PAUSE");
         model.pausedGame();
-//        ModelSnake.setStatus(StatusGame.PAUSE);
     }
 
     public static void Stop(){
         view.setEnabledButton(true,false,false);
         view.setStatus("STOPPED");
         model.stopGame();
-//        ModelSnake.setStatus(StatusGame.STOP);
-
     }
 
     public static void mousePressButton(MouseEvent e)
     {
         switch (e.getButton()){
-            case MouseEvent.BUTTON1:model.setDirection(true);break;
-            case MouseEvent.BUTTON3:model.setDirection(false);break;
+            case MouseEvent.BUTTON3:model.setDirection(true);break;
+            case MouseEvent.BUTTON1:model.setDirection(false);break;
         }
     }
 }
